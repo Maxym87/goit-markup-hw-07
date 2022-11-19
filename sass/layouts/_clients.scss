@@ -28,24 +28,25 @@
     transition-property: border-color;
     transition-duration: var(--main-trans-duration);
     transition-timing-function: var(--main-trans-timing-func);
+&:hover,
+    &:focus {
+        border-color: var(--accent-color);
+    }
 }
 
-.cliets-link:hover,
-.cliets-link:focus {
-    border-color: var(--accent-color);
-}
+
 
 .clients-icon {
     fill: #AFB1B8;
     transition-property: fill;
     transition-duration: var(--main-trans-duration);
     transition-timing-function: var(--main-trans-timing-func);
+    .cliets-link:hover & {
+            fill: var(--accent-color);
+        }
+    
+        .cliets-link:focus & {
+            fill: var(--accent-color);
+        }
 }
 
-.cliets-link:hover .clients-icon {
-    fill: var(--accent-color);
-}
-
-.cliets-link:focus .clients-icon {
-    fill: var(--accent-color);
-}

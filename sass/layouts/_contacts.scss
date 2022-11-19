@@ -13,6 +13,10 @@
     transition-property: color;
     transition-duration: var(--main-trans-duration);
     transition-timing-function: var(--main-trans-timing-func);
+    &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
 }
 
 .contacts-icon {
@@ -21,17 +25,11 @@
     transition-property: fill;
     transition-duration: var(--main-trans-duration);
     transition-timing-function: var(--main-trans-timing-func);
-}
-
-.cotacts-link:hover,
-.cotacts-link:focus {
-    color: var(--accent-color);
-}
-
-.cotacts-link:hover .contacts-icon {
-    fill: var(--accent-color);
-}
-
-.cotacts-link:focus .contacts-icon {
-    fill: var(--accent-color);
+    .cotacts-link:hover & {
+            fill: var(--accent-color);
+        }
+    
+        .cotacts-link:focus & {
+            fill: var(--accent-color);
+        }
 }

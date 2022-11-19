@@ -12,6 +12,13 @@
 
 .portfolio-link {
     display: block;
+    transition-property: box-shadow;
+        transition-duration: var(--main-trans-duration);
+        transition-timing-function: var(--main-trans-timing-func);
+    &:hover,
+        &:focus {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
 }
 
 .portfolio-top-wrap {
@@ -34,19 +41,13 @@
     transition-property: transform;
     transition-duration: var(--main-trans-duration);
     transition-timing-function: var(--main-trans-timing-func);
-}
-
-.portfolio-link:hover,
-.portfolio-link:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.portfolio-link:hover .portfolio-top-text {
-    transform: translateY(0);
-}
-
-.portfolio-link:focus .portfolio-top-text {
-    transform: translateY(0);
+    .portfolio-link:hover & {
+            transform: translateY(0);
+        }
+    
+        .portfolio-link:focus & {
+            transform: translateY(0);
+        }
 }
 
 .portfolio-wrap {

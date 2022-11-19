@@ -193,13 +193,12 @@ body {
   transition-duration: var(--main-trans-duration);
   transition-timing-function: var(--main-trans-timing-func);
 }
+.modal-input:focus {
+  border-color: var(--accent-color);
+}
 
 .input-wrap {
   position: relative;
-}
-
-.modal-input:focus {
-  border-color: var(--accent-color);
 }
 
 .modal-input:focus + .input-icon {
@@ -686,9 +685,7 @@ body {
   transition-duration: var(--main-trans-duration);
   transition-timing-function: var(--main-trans-timing-func);
 }
-
-.cliets-link:hover,
-.cliets-link:focus {
+.cliets-link:hover, .cliets-link:focus {
   border-color: var(--accent-color);
 }
 
