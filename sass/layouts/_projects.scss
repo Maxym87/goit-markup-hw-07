@@ -1,0 +1,34 @@
+.projects-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.projects-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--second-title-color);
+    margin-bottom: 50px;
+}
+
+.projects-thumb {
+    position: relative;
+}
+
+
+.projects-thumb-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
