@@ -1,21 +1,17 @@
-.header {
-    padding-top: 24px;
-    padding-bottom: 25px;
-}
+
 
 .header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+        padding-top: 24px;
+            padding-bottom: 25px;
 }
 
 .navigation {
     display: flex;
     align-items: center;
 }
-
-
-
 .meny {
     display: flex;
     gap: 50px;

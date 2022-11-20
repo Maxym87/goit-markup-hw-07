@@ -114,7 +114,7 @@
     transition-property: fill;
     --main-trans-duration: 250ms;
         --main-trans-timing-func: cubic-bezier(0.4, 0, 0.2, 1);
-    .modal-input:focus+& {
+    .modal-input:focus + & {
             fill: var(--accent-color);
         }
 }

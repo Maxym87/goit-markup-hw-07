@@ -2,7 +2,7 @@
      background: var(--backgrounds-team-color);
  }
 
- .team-title {
+ .team__title {
      font-weight: 700;
      font-size: 36px;
      line-height: 1.17;
@@ -11,19 +11,19 @@
      margin-bottom: 50px;
  }
 
- .team-list {
+ .people-list {
      display: flex;
      gap: 30px;
  }
 
- .team-item {
+ .people-list__item {
      background: var(--background-items-color);
      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
      border-radius: 0px 0px 4px 4px;
      flex-basis: calc((100% - 90px) / 4);
  }
 
- .team-name {
+ .people-list__name {
      font-weight: 500;
      font-size: 16px;
      line-height: 1.19;
@@ -32,7 +32,7 @@
      margin-bottom: 10px;
  }
 
- .team-job {
+ .people-list__job {
      font-size: 16px;
      line-height: 1.19;
      text-align: center;
@@ -40,24 +40,24 @@
      margin-bottom: 16px;
  }
 
- .team-wrap {
+ .people-list__wrap {
      padding-top: 30px;
      padding-bottom: 30px;
  }
 
- .team-soc-list {
+ .soc-list {
      display: flex;
      justify-content: center;
      gap: 10px;
  }
 
 
- .team-soc-item {
+ .soc-list__item {
      width: 44px;
      height: 44px;
  }
 
- .team-soc-link {
+ .soc-list__link {
      width: 100%;
      height: 100%;
      border-radius: 50%;
@@ -73,16 +73,16 @@
         }
  }
 
- .team-soc-icon {
+ .soc-list__icon {
      fill: #AFB1B8;
      transition-property: fill;
      transition-duration: var(--main-trans-duration);
      transition-timing-function: var(--main-trans-timing-func);
-    .team-soc-link:hover & {
+    .soc-list__link:hover & {
             fill: #FFFFFF;
         }
     
-        .team-soc-link:focus & {
+        .soc-list__link:focus & {
             fill: #FFFFFF;
         }
  }

@@ -1,4 +1,4 @@
-.clients-title {
+.clients__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -7,17 +7,17 @@
     margin-bottom: 50px;
 }
 
-.clients-list {
+.icons-list {
     display: flex;
     gap: 30px;
 }
 
-.clients-item {
+.icons-list__item {
     height: 92px;
     flex-basis: calc((100% - 150px) / 6);
 }
 
-.cliets-link {
+.icons-list__link {
     width: 100%;
     height: 100%;
     border: 1px solid #AFB1B8;
@@ -34,18 +34,16 @@
     }
 }
 
-
-
-.clients-icon {
+.icons-list__icon {
     fill: #AFB1B8;
     transition-property: fill;
     transition-duration: var(--main-trans-duration);
     transition-timing-function: var(--main-trans-timing-func);
-    .cliets-link:hover & {
+    .icons-list__link:hover & {
             fill: var(--accent-color);
         }
     
-        .cliets-link:focus & {
+        .icons-list__link:focus & {
             fill: var(--accent-color);
         }
 }

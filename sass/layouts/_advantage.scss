@@ -1,13 +1,16 @@
-.advantage {
+.advantage__container {
     padding-top: 94px;
 }
 
-.advantage-list {
+.pic-list {
     display: flex;
     gap: 30px;
 }
+.pic-list__item {
+    flex-basis: calc((100% - 90px)/4);
+}
 
-.advantage-wrap {
+.pic-list__wrap {
     width: 270px;
     height: 120px;
     background: #F5F4FA;
@@ -18,11 +21,7 @@
     margin-bottom: 30px;
 }
 
-.advantage-item {
-    flex-basis: calc((100% - 90px)/4);
-}
-
-.advantage-title {
+.pic-list__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -31,7 +30,7 @@
     color: var(--second-title-color);
 }
 
-.advantage-txt {
+.pic-list__txt {
     line-height: 1.71;
     color: var(--main-text-color);
 }

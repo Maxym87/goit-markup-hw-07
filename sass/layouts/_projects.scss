@@ -1,10 +1,5 @@
-.projects-list {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
 
-.projects-title {
+.projects__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -13,12 +8,18 @@
     margin-bottom: 50px;
 }
 
-.projects-thumb {
+.card-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card-list__thumb {
     position: relative;
 }
 
 
-.projects-thumb-text {
+.card-list__text {
     position: absolute;
     bottom: 0;
     width: 100%;
