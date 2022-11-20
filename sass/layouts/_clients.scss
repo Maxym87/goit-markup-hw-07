@@ -26,8 +26,8 @@
     align-items: center;
     justify-content: center;
     transition-property: border-color;
-    transition-duration: var(--main-trans-duration);
-    transition-timing-function: var(--main-trans-timing-func);
+    --main-trans-duration: 250ms;
+        --main-trans-timing-func: cubic-bezier(0.4, 0, 0.2, 1);
 &:hover,
     &:focus {
         border-color: var(--accent-color);

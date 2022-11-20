@@ -3,25 +3,25 @@
     padding-bottom: 25px;
 }
 
-.header-container {
+.header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header-nav {
+.navigation {
     display: flex;
     align-items: center;
 }
 
 
 
-.header-list {
+.meny {
     display: flex;
     gap: 50px;
 }
 
-.header-link {
+.meny__link {
     display: block;
     position: relative;
     font-weight: 500;

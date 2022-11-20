@@ -6,8 +6,8 @@
     background-color: rgba(0, 0, 0, 0.2);
     position: fixed;
     transition-property: opacity, visibility;
-    transition-duration: var(--main-trans-duration);
-    transition-timing-function: var(--main-trans-timing-func);
+--main-trans-duration: 250ms;
+    --main-trans-timing-func: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -22,8 +22,8 @@
     left: 50%;
     transform: translate(-50%, -50%) scaleY(1);
     transition-property: transform;
-    transition-duration: var(--main-trans-duration);
-    transition-timing-function: var(--main-trans-timing-func);
+    --main-trans-duration: 250ms;
+        --main-trans-timing-func: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden .modal {
@@ -47,8 +47,8 @@
 
 .modal-icon {
     transition-property: fill;
-    transition-duration: var(--main-trans-duration);
-    transition-timing-function: var(--main-trans-timing-func);
+    --main-trans-duration: 250ms;
+        --main-trans-timing-func: cubic-bezier(0.4, 0, 0.2, 1);
     .modal-close:hover & {
             fill: var(--accent-color);
         }
@@ -112,8 +112,8 @@
     top: 50%;
     transform: translateY(-50%);
     transition-property: fill;
-    transition-duration: var(--main-trans-duration);
-    transition-timing-function: var(--main-trans-timing-func);
+    --main-trans-duration: 250ms;
+        --main-trans-timing-func: cubic-bezier(0.4, 0, 0.2, 1);
     .modal-input:focus+& {
             fill: var(--accent-color);
         }
@@ -181,8 +181,8 @@
     margin-right: 7px;
     fill: transparent;
     transition-property: border-color;
-    transition-duration: var(--main-trans-duration);
-    transition-timing-function: var(--main-trans-timing-func);
+    --main-trans-duration: 250ms;
+        --main-trans-timing-func: cubic-bezier(0.4, 0, 0.2, 1);
     .input-check:checked + & {
             background-color: var(--accent-color);
             border-color: transparent;

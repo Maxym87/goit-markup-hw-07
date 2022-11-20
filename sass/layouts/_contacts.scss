@@ -11,8 +11,8 @@
     display: flex;
     align-items: center;
     transition-property: color;
-    transition-duration: var(--main-trans-duration);
-    transition-timing-function: var(--main-trans-timing-func);
+    --main-trans-duration: 250ms;
+        --main-trans-timing-func: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
         &:focus {
             color: var(--accent-color);
@@ -23,8 +23,8 @@
     fill: #757575;
     margin-right: 10px;
     transition-property: fill;
-    transition-duration: var(--main-trans-duration);
-    transition-timing-function: var(--main-trans-timing-func);
+    --main-trans-duration: 250ms;
+        --main-trans-timing-func: cubic-bezier(0.4, 0, 0.2, 1);
     .cotacts-link:hover & {
             fill: var(--accent-color);
         }

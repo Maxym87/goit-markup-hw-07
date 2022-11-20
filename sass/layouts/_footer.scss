@@ -23,8 +23,8 @@
     line-height: 1.71;
     color: var(--address-map-color);
     transition-property: color;
-    transition-duration: var(--main-trans-duration);
-    transition-timing-function: var(--main-trans-timing-func);
+    --main-trans-duration: 250ms;
+        --main-trans-timing-func: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
         &:focus {
             color: var(--accent-color);
@@ -92,8 +92,8 @@
     align-items: center;
     justify-content: center;
     transition-property: background-color;
-    transition-duration: var(--main-trans-duration);
-    transition-timing-function: var(--main-trans-timing-func);
+    --main-trans-duration: 250ms;
+        --main-trans-timing-func: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
         &:focus {
             background-color: var(--accent-color);
@@ -161,8 +161,8 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     transition-property: background-color;
-    transition-duration: var(--main-trans-duration);
-    transition-timing-function: var(--main-trans-timing-func);
+    --main-trans-duration: 250ms;
+        --main-trans-timing-func: cubic-bezier(0.4, 0, 0.2, 1);
     &:focus {
             background-color: #188CE8;
         }
